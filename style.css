@@ -32,7 +32,7 @@ body {
 
 #password-length {
   border-style: none;
-  border-bottom: solid 2px  #55f991;
+  border-bottom: solid 2px #55f991;
   background-color: transparent;
   color: #55f991;
   text-align: center;
@@ -59,11 +59,27 @@ body {
 #generate-button:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
-  transform: translateY(4px)
+  transform: translateY(4px);
 }
 
 .line {
   background: #2f3e53;
+}
+
+.user-input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  gap: 3%;
+}
+
+.generate-btn {
+  order: 2;
+}
+
+.length-input {
+  order: 1;
 }
 
 .password-box-wrapper {
@@ -89,7 +105,7 @@ body {
   font-family: Inter;
   font-size: 15px;
   font-weight: 200;
-  line-height: 32px;  
+  line-height: 32px;
 }
 
 #message-area {
@@ -101,7 +117,6 @@ body {
   border-radius: 5px;
   padding: 5px 1px;
 }
-
 
 @media only screen and (max-width: 600px) {
   .container {
